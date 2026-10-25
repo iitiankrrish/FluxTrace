@@ -29,7 +29,7 @@ When a functional program gives a wrong answer, the usual tools fall short:
 
 ### The solution
 
-Lambda Lineage is a browser-based **visual interpreter, lineage tracer and backward solver** for a pure mini-Haskell language.
+FluxTrace is a browser-based **visual interpreter, lineage tracer and backward solver** for a pure mini-Haskell language.
 
 1. **It evaluates in small steps.** Each step rewrites exactly one sub-expression, in place, and every intermediate program is kept, so you can scrub through time.
 2. **Every value carries provenance.** It gets a unique ID and a record of which values produced it, with which rule and formula. Clicking any value draws arrows to all its ancestors and descendants and shows its full biography.
@@ -72,8 +72,7 @@ Lambda Lineage is a browser-based **visual interpreter, lineage tracer and backw
 
 ## 3. Video demonstration
 
-[Demonstration Video]
-
+[Demonstration Video](https://youtu.be/ra-Jvc01anU?si=IvTh4U0-BEv6Lwew)
 
 ## 4. System architecture
 
@@ -161,7 +160,7 @@ Each step produces a `StepSnapshot`. It holds the full expression, the active an
 ## 6. Folder structure
 
 ```
-lambda-lineage/
+flux-trace/
 ├── index.html                  App shell (title, meta, root element)
 ├── package.json                Scripts and dependencies
 ├── package-lock.json           Exact dependency versions
